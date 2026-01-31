@@ -13,7 +13,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CONFIG_FILE="${SCRIPT_DIR}/services.conf"
 LOG_FILE="${SCRIPT_DIR}/monitor.log"
 STATE_FILE="${SCRIPT_DIR}/.service_states"
-CHECK_INTERVAL=30  # seconds between checks
+CHECK_INTERVAL=5  # seconds between checks
 
 # Colors
 readonly RED='\033[0;31m'
