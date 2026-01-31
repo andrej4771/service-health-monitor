@@ -5,7 +5,6 @@ After=network.target
 
 [Service]
 Type=simple
-User=%u
 WorkingDirectory=%h/service-health-monitor
 ExecStart=%h/service-health-monitor/service-monitor.sh monitor
 Restart=always
