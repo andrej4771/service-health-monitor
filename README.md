@@ -4,13 +4,13 @@ A lightweight, shell-based systemd service monitoring tool for Linux with deskto
 
 ## Features
 
-- 🔍 **Real-time Monitoring** - Continuously watch your systemd services
-- 🔔 **Desktop Notifications** - Instant alerts when services change state
-- 📊 **Status Dashboard** - Clean terminal UI showing all service states
-- 📝 **Activity Logging** - Track all service state changes over time
-- ⚙️ **Easy Configuration** - Simple text file to manage monitored services
-- 🎨 **Colorful Output** - Color-coded status indicators
-- 🚀 **Lightweight** - Pure Bash, minimal dependencies
+-  **Real-time Monitoring** - Continuously watch your systemd services
+-  **Desktop Notifications** - Instant alerts when services change state
+-  **Status Dashboard** - Clean terminal UI showing all service states
+-  **Activity Logging** - Track all service state changes over time
+-  **Easy Configuration** - Simple text file to manage monitored services
+-  **Colorful Output** - Color-coded status indicators
+-  **Lightweight** - Pure Bash, minimal dependencies
 
 ## Screenshots
 
