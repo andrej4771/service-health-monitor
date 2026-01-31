@@ -109,11 +109,34 @@ The monitor will run continuously and send desktop notifications when services c
 ./service-monitor.sh test
 ```
 
-### Running as Background Service
+### Running as Background Service (Recommended)
 
-To run the monitor continuously in the background, you can use `screen`, `tmux`, or create a systemd service.
+The easiest way to run the monitor continuously is to install it as a systemd user service. It will start automatically on boot and run in the background.
 
-#### Using screen:
+#### Automatic Installation (Recommended):
+
+```bash
+# Install as systemd service
+./install-service.sh
+```
+
+That's it! The monitor now runs automatically in the background and will start on boot.
+
+**Useful commands:**
+```bash
+systemctl --user status service-monitor   # Check status
+systemctl --user stop service-monitor     # Stop monitoring
+systemctl --user start service-monitor    # Start monitoring
+systemctl --user restart service-monitor  # Restart monitoring
+journalctl --user -u service-monitor -f   # View live logs
+```
+
+**To uninstall:**
+```bash
+./uninstall-service.sh
+```
+
+#### Alternative: Using screen (temporary):
 
 ```bash
 screen -S service-monitor
@@ -122,35 +145,6 @@ screen -S service-monitor
 ```
 
 To reattach: `screen -r service-monitor`
-
-#### Creating a systemd service:
-
-Create `/etc/systemd/system/service-monitor.service`:
-
-```ini
-[Unit]
-Description=Service Health Monitor
-After=network.target
-
-[Service]
-Type=simple
-User=youruser
-WorkingDirectory=/path/to/service-health-monitor
-ExecStart=/path/to/service-health-monitor/service-monitor.sh monitor
-Restart=always
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
-```
-
-Then enable and start it:
-
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable service-monitor
-sudo systemctl start service-monitor
-```
 
 ## Configuration
 

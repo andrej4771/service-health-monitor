@@ -1,0 +1,21 @@
+[Unit]
+Description=Service Health Monitor
+Documentation=https://github.com/andrej4771/service-health-monitor
+After=network.target
+
+[Service]
+Type=simple
+User=%u
+WorkingDirectory=%h/service-health-monitor
+ExecStart=%h/service-health-monitor/service-monitor.sh monitor
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+# Security hardening
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=default.target

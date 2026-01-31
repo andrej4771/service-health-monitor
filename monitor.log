@@ -1,0 +1,7 @@
+[2026-01-31 17:55:31] [NOTIFICATION] Service Health Monitor: Test notification - if you see this, notifications are working!
+[2026-01-31 18:03:19] [INFO] Created state file: /home/andrejatanaskov/Documents/Projects/service-monitor/.service_states
+[2026-01-31 18:03:19] [INFO] Monitor started
+[2026-01-31 18:07:05] [INFO] Monitor started
+[2026-01-31 18:09:28] [INFO] Monitor started
+[2026-01-31 18:09:58] [WARN] cron: active -> inactive (stopped)
+[2026-01-31 18:10:28] [INFO] cron: inactive -> active (recovered)
