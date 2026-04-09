@@ -12,21 +12,6 @@ A lightweight, shell-based systemd service monitoring tool for Linux with deskto
 -  **Colorful Output** - Color-coded status indicators
 -  **Lightweight** - Pure Bash, minimal dependencies
 
-## Screenshots
-
-```
-╔════════════════════════════════════════╗
-║    Service Health Monitor Status     ║
-╚════════════════════════════════════════╝
-
-SERVICE                        STATUS
--------                        ------
-ssh                            ✓ RUNNING
-nginx                          ✓ RUNNING
-mysql                          ✗ FAILED
-docker                         ○ STOPPED
-```
-
 ## Installation
 
 ### Quick Install
