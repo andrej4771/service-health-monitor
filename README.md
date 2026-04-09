@@ -181,10 +181,10 @@ sudo pacman -S libnotify
 
 The monitor tracks four service states:
 
-- **✓ RUNNING** (green) - Service is active and running
-- **✗ FAILED** (red) - Service has failed
-- **○ STOPPED** (yellow) - Service is inactive/stopped
-- **? NOT FOUND** (red) - Service doesn't exist
+-  $\color{green}✓ RUNNING$  - Service is active and running
+-  $\color{red}✖ FAILED$  - Service has failed
+- $\color{yellow}○ STOPPED$  - Service is inactive/stopped
+-  $\color{red}? NOT FOUND$  - Service doesn't exist
 
 ## Notifications
 
