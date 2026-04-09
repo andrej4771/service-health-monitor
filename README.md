@@ -129,7 +129,7 @@ screen -S service-monitor
 # Press Ctrl+A then D to detach
 ```
 
-To reattach: `screen -r service-monitor`
+To reatach: `screen -r service-monitor`
 
 ## Configuration
 
@@ -204,14 +204,6 @@ All service state changes are logged to `monitor.log` with timestamps:
 [2026-01-31 10:16:30] [INFO] nginx: failed -> active (recovered)
 ```
 
-## Use Cases
-
-Perfect for:
-
-- **Server administrators** - Monitor critical services on production servers
-- **Developers** - Watch local development services (databases, web servers)
-- **DevOps** - Quick alerts for service failures during deployments
-- **Home labs** - Monitor self-hosted services
 
 ## Common Services to Monitor
 
@@ -276,13 +268,6 @@ sudo ./service-monitor.sh status
 
 However, most standard services can be checked by regular users.
 
-## Tips
-
-- **Start small** - Begin monitoring 3-5 critical services, add more as needed
-- **Check interval** - Adjust `CHECK_INTERVAL` based on your needs (shorter = more responsive, longer = less resource usage)
-- **Log rotation** - Consider setting up logrotate for the monitor.log file
-- **Combine with other tools** - Use alongside monitoring stacks like Prometheus for comprehensive monitoring
-
 ## Contributing
 
 Contributions welcome! Feel free to:
@@ -292,20 +277,6 @@ Contributions welcome! Feel free to:
 - Submit pull requests
 - Improve documentation
 
-## Roadmap
-
-Future enhancements:
-
-- [ ] Email notifications
-- [ ] Slack/Discord webhook integration
-- [ ] HTTP health check support
-- [ ] Custom check intervals per service
-- [ ] Web dashboard
-- [ ] Metrics export (Prometheus format)
-- [ ] Auto-restart failed services
-- [ ] Service dependency tracking
-- [ ] Multi-server monitoring
-
 ## License
 
 MIT License - See LICENSE file for details
@@ -314,7 +285,4 @@ MIT License - See LICENSE file for details
 
 Created by [andrej4771](https://github.com/andrej4771)
 
-## Related Projects
 
-- [popos-power-manager](https://github.com/andrej4771/popos-power-manager) - Power management for Pop!_OS
-- [system-administration](https://github.com/andrej4771/system-administration) - Ubuntu system administration guide
